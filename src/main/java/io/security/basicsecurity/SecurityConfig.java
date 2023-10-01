@@ -77,7 +77,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe()
                 .rememberMeParameter("remberme")
                 .tokenValiditySeconds(3600)
-                .userDetailsService(userDetailsService)
+                .userDetailsService(userDetailsService);
 
         http
                 .sessionManagement()
